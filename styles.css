@@ -276,8 +276,7 @@ footer {
     }
 
     .skills-list {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 2fr;
     }
 }
 
