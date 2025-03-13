@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentesnot Assetu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Mentesnot Assetu</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Mentesnot Assetu</h1>
+        <p>Graphics Designer, UX/UI Designer, and Frontend Web Developer</p>
+        <p>Welcome to My Portfolio</p>
+        <video controls  class="home-video">
+            <source src="videos\videos23.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/150" alt="Mentesnot Assetu Photo" class="about-photo">
+            <p>As a dynamic Graphics Designer, UX/UI Designer, and Frontend Developer with three years of experience in graphic design, I specialize in creating visually appealing and user-centric digital experiences. My expertise spans a wide range of design and development skills, allowing me to bring innovative concepts to life. With a keen eye for detail and a passion for creating intuitive user interfaces, I strive to deliver exceptional results that exceed client expectations.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <div class="project-item">
+                <h2>To-Do List App Prototype</h2>
+                <p>This prototype showcases my skills in UI/UX design, emphasizing both functionality and aesthetic appeal.</p>
+            </div>
+            <div class="project-item">
+                <h2>Quiz Application</h2>
+                <p>Designed using Figma for a mobile-only experience.</p>
+            </div>
+            <div class="project-item">
+                <h2>Sales Calculator</h2>
+                <p>A practical tool designed for quick calculations.</p>
+            </div>
+            <div class="project-item">
+                <h2>Flyer Design Using Photoshop</h2>
+                <p>A visually compelling flyer with eye-catching visuals and brand consistency.</p>
+                <video controls width="100%">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 1" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 2" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 3" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 4" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 5" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 6" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 7" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 8" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 9" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 10" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 11" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 12" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 13" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 14" onclick="openModal(this.src)">
+            <img src="https://via.placeholder.com/300" alt="Gallery Image 15" onclick="openModal(this.src)">
+        </div>
+    </section>
+
+    <!-- Modal for Zoomed Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul class="skills-list">
+            <li><i class="fab fa-figma"></i> Figma</li>
+            <li><i class="fas fa-brain"></i> Miro</li>
+            <li><i class="fab fa-adobe"></i> Adobe Photoshop</li>
+            <li><i class="fab fa-adobe"></i> Adobe Illustrator</li>
+            <li><i class="fab fa-adobe"></i> Adobe After Effects</li>
+            <li><i class="fab fa-adobe"></i> Adobe InDesign</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-wind"></i> Tailwind CSS</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-code"></i> VS Code</li>
+            <li><i class="fab fa-microsoft"></i> MS Office</li>
+            <li><i class="fab fa-github"></i> GitHub</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-html5"></i> HTML & CSS</li>
+            <li><i class="fas fa-video"></i> CapCut</li>
+            <li><i class="fas fa-code"></i> Frontend Development</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <ul>
+            <li><a href="https://www.woldiauniversity.edu.et" target="_blank">Bachelor of Science in Civil Engineering - Woldia University</a></li>
+            <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design - FreeCodeCamp</a></li>
+            <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">JavaScript Algorithms and Data Structures - FreeCodeCamp</a></li>
+            <li><a href="https://www.udacity.com/course/programming-fundamentals" target="_blank">Programming Fundamentals - Udacity</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Phone: <a href="tel:+251941067678">+2519-4106-7678</a></p>
+        <p>Email: <a href="mailto:mentesnotassetu@gmail.com">mentesnotassetu@gmail.com</a></p>
+        <p>Social: <a href="https://linkedin.com" target="_blank">LinkedIn</a> | <a href="https://twitter.com" target="_blank">Twitter</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Mentesnot Assetu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
